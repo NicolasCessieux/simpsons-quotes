@@ -23,6 +23,84 @@
   color: #61dafb;
 }
 
+
+.Lamp {
+  position: relative;
+  width: 120px;
+  margin: 5px auto;
+  padding: 5px 15px;
+  height: 51px;
+}
+.Lamp button {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+}
+.Lamp button.off {
+  background: red;
+}
+.Lamp button.on {
+  background: green;
+}
+.Lamp figure {
+  position: absolute;
+  margin: 0;
+  right: 20px;
+  width: 51px;
+  height: 51px;
+  border-radius: 100%;
+}
+.Lamp figure.off {
+  background: rgba(0,0,0,0.03);
+  box-shadow: inset 0px 1px 5px rgba(0,0,0,0.1), inset 0px 2px 20px rgba(0,0,0,0.07);
+}
+.Lamp figure.on {
+  background: rgba(255,160,96,1);
+  box-shadow: 0px 0px 10px rgba(255,160,96,0.8), 0px 0px 30px rgba(255,160,96,0.8), 0px 0px 50px rgba(255,160,96,0.6), 0px 0px 70px rgba(255,160,96,0.6);
+}
+
+.Working {
+  width: 500px;
+  margin: 12px;
+  padding: 24px;
+  height: 500px;
+}
+.Working button {
+  position: relative;
+  border: none;
+  padding: 24px;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 10%;
+}
+.Working button.off {
+  background: rgb(245, 48, 48);
+}
+.Working button.on {
+  background: rgb(60, 199, 60);
+}
+.Working figure {
+  height: 300px;
+}
+.Working figure.off {
+  background-image: url(logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: App-logo-spin infinite 40s linear;
+}
+.Working figure.on {
+  background-image: url(logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: App-logo-spin infinite 5s linear;
+}
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
